@@ -1,4 +1,5 @@
 import styles from '../styles/feedbackOptions.module.css';
+// FeedbackOptions.js
 
 export const FeedbackOptions = ({ options, onButtonClick }) => {
   return (
