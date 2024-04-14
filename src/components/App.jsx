@@ -10,10 +10,10 @@ export const App = () => {
 
   const { good, neutral, bad } = feedback;
 
-  const onButtonClick = option => {
-    setFeedback(prevValue => ({
-      ...prevValue,
-      [option]: prevValue[option] + 1,
+  const onButtonClick = type => {
+    setFeedback(prev => ({
+      ...prev,
+      [type]: prev[type] + 1,
     }));
     setRunCountFeedback(true);
   };
